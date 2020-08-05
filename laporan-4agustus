@@ -18,15 +18,20 @@ class _MyAppState extends State<MyApp> {
       title: 'Arief Fadhilah',
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.white,
         appBar: AppBar(
-          title: Text('Aplikasi Pertama'),
-          backgroundColor: Colors.blueAccent,
-        ),
+        leading: new Icon(Icons.home),
+          title: new Center(
+          child: new Text('Aplikasi Pertama'),
+         ),   //Center
+         actions: <Widget>[
+         new Icon(Icons.search),
+         ],  //<Widget>
+         ),  //AppBar
         body: Center(
           child: Text('Selamat Datang'),
-        ),
-      ),
-    );
+        ),  // Center
+      ),   //Scaffold
+    );    // MaterialApp
   }
 }
